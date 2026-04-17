@@ -4,7 +4,7 @@ font-size: 30px;
 
 /* Фон для ВСЕХ страниц без исключения */
 body {
-    background-image: url('static/images/3.7.jpg');
+    background-image: url('/collection_stories/static/images/3.7.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
