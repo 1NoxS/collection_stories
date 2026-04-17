@@ -1,5 +1,5 @@
-body.home_st{
-font-size: 30px;
+body.home_st {
+    font-size: 30px;
 }
 
 /* Фон для ВСЕХ страниц без исключения */
@@ -10,7 +10,6 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
-
 
 .card {
     display: flex;
