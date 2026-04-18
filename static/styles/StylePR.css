@@ -2,6 +2,9 @@ body.home_st {
     font-size: 30px;
 }
 
+li.lol{
+    color:white;
+}
 /* Фон для ВСЕХ страниц без исключения */
 body {
     background-image: url('../images/3.7.jpg');
@@ -27,32 +30,32 @@ body {
 
 
 a{
-  color:rgb(14, 117, 36)
+    color:rgb(152,15,152)
 }
 p.ant{
-  font-size: 20px;
-  color:ghostwhite;
+    font-size: 20px;
+    color:ghostwhite;
 }
 
 h5{
-  font-size: 25px;
+    font-size: 25px;
     color: azure;
 }
 
 li{
-  font-size: 20px;
+    font-size: 20px;
 
 }
 
 /* Только для обычных абзацев вне story-page */
-body:not(.Os) p {
+body:not(.Os,.TD) p {
     font-size: 20px;
     padding: 15px;
     margin: 20px;
 }
 
 /* Основные стили для страницы рассказа */
-.Os {
+.Os,.TD{
     margin: 0;
     padding: 0;
     font-family: 'Georgia', 'Times New Roman', serif;
@@ -104,6 +107,17 @@ body:not(.Os) p {
     text-indent: 0;
 }
 
+.story-page-named {
+    margin-left: 10px;
+    font-weight: bold;
+    text-indent: 0;
+}
+
+.story-page-named .speaker {
+    color: #c0c0c0;  /* цвет имени */
+}
+
+
 /* Мысли персонажа */
 .story-page-thought {
     margin-left: 30px;
@@ -143,6 +157,24 @@ body:not(.Os) p {
     background: rgba(255, 255, 255, 0.4);
     transform: scale(1.05);
 }
+
+.prev-chapter {
+    display: inline-block;
+    padding: 12px 28px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-decoration: none;
+    border-radius: 40px;
+    font-size: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    margin-right: 20px;
+}
+
+.prev-chapter:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+}
+
 
 /* Адаптивность для телефонов */
 @media (max-width: 768px) {
