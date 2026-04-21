@@ -109,13 +109,13 @@ body:not(.Os,.TD) p {
 }
 
 .story-page-named {
-    margin-left: 10px;
-    font-weight: bold;
+    margin-left: 20px;
+    font-style: italic;
     text-indent: 0;
 }
 
 .story-page-named .speaker {
-    color: #c0c0c0;  /* цвет имени */
+    color: #21b9e7;  /* цвет имени */
 }
 
 
