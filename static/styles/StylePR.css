@@ -134,7 +134,7 @@ body:not(.Os,.TD) p
     color: #e0e0e0;
 }
 
-/* Навигация */
+/* Навигация в главах*/
 .navigation {
     text-align: center;
     margin: 40px auto;
@@ -237,15 +237,8 @@ body:not(.Os,.TD) p
     visibility: visible;
 }
 
-.scroll-top {
-    opacity: 0;
-    visibility: hidden;
-}
-.scroll-top.show {
-    opacity: 1;
-    visibility: visible;
-}
 
+/*Музыка */
 .music-player {
     position: fixed;
     bottom: 20px;
@@ -270,6 +263,99 @@ body:not(.Os,.TD) p
     background: rgba(218, 255, 150, 0.9);
     transform: scale(1.05);
 }
+
+/*Общая навигация*/
+
+.breadcrumbs {
+    max-width: 800px;
+    margin: 0 auto 20px auto;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    border-radius: 40px;
+    font-size: 20px;
+    color: #aaa;
+}
+
+.breadcrumbs a {
+    color: #5ef8ae;
+    text-decoration: none;
+
+    transition: color 0.2s;
+}
+
+.breadcrumbs a:hover {
+    color: #ffaa44;
+    text-decoration: underline;
+}
+
+.breadcrumbs .separator {
+    margin: 0 8px;
+    color: #888;
+}
+
+.breadcrumbs .current {
+
+    color: white;
+    font-weight: bold;
+}
+
+/* ===== ПРОГРЕСС-БАР ЧТЕНИЯ ===== */
+.progress-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1001;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    background: linear-gradient(90deg, #21b9e7, #764ba2);
+    transition: width 0.1s ease;
+}
+
+/*Навигация по главам - красота */
+.chapter-selector {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.chapter-selector label {
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+#chapterSelect {
+    padding: 8px 15px;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 25px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#chapterSelect:hover {
+    background: rgba(102, 126, 234, 0.5);
+}
+
+
+/* ===== ВРЕМЯ ЧТЕНИЯ ===== */
+.reading-time {
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+
 
 /* Адаптивность для телефонов */
 @media (max-width: 768px) {

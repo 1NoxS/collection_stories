@@ -2,3 +2,16 @@
 class="story-page-speaker"
 
 <p class="story-page-named"><span class="speaker">Рейни:</span> Ты идёшь к птицам...</p>
+
+    <!-- Музыкальный плеер -->
+<div class="music-player">
+    <button id="musicToggle" class="music-btn">🎵 Включить музыку</button>
+    <audio id="bgMusic" loop src="static/music/bg.mp3"></audio>
+</div>
+
+/* */
+
+2	Выпадающий список глав	Удобная навигация
+3	Время чтения	Приятный бонус для читателя
+
+5	Счётчик прочтений	Интересно автору и читателям

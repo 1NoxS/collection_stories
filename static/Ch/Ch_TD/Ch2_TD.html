@@ -7,8 +7,23 @@
     <title>Только вверх - глава 2</title>
   </head>
   <body class="TD">
+
+    <nav class="breadcrumbs" aria-label="Навигация">
+      <a href="../../../index.html">Главная</a>
+      <span class="separator">/</span>
+      <a href="../../stories/Stories3.html">Только вверх</a>
+      <span class="separator">/</span>
+      <span class="current" aria-current="page">Глава 2</span>
+    </nav>
+
+    <!-- Прогресс-бар чтения -->
+    <div class="progress-container">
+        <div class="progress-bar" id="readingProgress"></div>
+    </div>
+
     <main class="story-page">
       <h1>Глава 2 - Пакт доверия</h1>
+      <div class="reading-time" id="readingTime"></div>
       
       <p>
         Я сидел на крыше гаража. Капюшон был натянут, маска под ним. В мире людей
@@ -641,13 +656,29 @@
         <span class="speaker">Рейни:</span> Спи, Стикс. Я посторожу. Мы, лисы, и это умеем. Когда надо.
         Когда есть кого сторожить.
       </p>
-<p>      </p>
     </main>
+
     <div class="navigation">
       <a href="Ch1_TD.html" class="prev-chapter">← Предыдущая глава</a>
       <a href="Ch3_TD.html" class="next-chapter">Следующая глава →</a>
-      <button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
-      <script src="../../styles/script.js"></script>
     </div>
+    
+    <div class="chapter-selector">
+    <label for="chapterSelect">📖 Перейти к главе:</label>
+      <select id="chapterSelect">
+          <option value="Ch1_TD.html">Глава 1</option>
+          <option value="Ch2_TD.html">Глава 2</option>
+          <option value="Ch3_TD.html">Глава 3</option>
+      </select>
+    </div>
+      
+      <button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
+
+    <div class="music-player">
+      <button id="musicToggle" class="music-btn">🎵 Включить музыку</button>
+      <audio id="bgMusic" loop src="../../music/bg.mp3"></audio>
+    </div>
+    <script src="../../js/script.js"></script>
+
   </body>
 </html>

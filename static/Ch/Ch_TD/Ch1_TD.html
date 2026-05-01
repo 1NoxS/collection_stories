@@ -7,8 +7,22 @@
     <title>Только вверх - глава 1</title>
   </head>
   <body class="TD">
+    
+    <nav class="breadcrumbs" aria-label="Навигация">
+      <a href="../../../index.html">Главная</a>
+      <span class="separator">/</span>
+      <a href="../../stories/Stories3.html">Только вверх</a>
+      <span class="separator">/</span>
+      <span class="current" aria-current="page">Глава 1</span>
+    </nav>
+    <!-- Прогресс-бар чтения -->
+    <div class="progress-container">
+        <div class="progress-bar" id="readingProgress"></div>
+    </div>
+
     <main class="story-page">
       <h1>Глава 1 - Руины</h1>
+      <div class="reading-time" id="readingTime"></div>
       
       <p>
         Святилище встретило меня тишиной. Полуразрушенные колонны тянулись к
@@ -407,6 +421,14 @@
       <a href="Ch2_TD.html" class="next-chapter">Следующая глава →</a>
     </div>
     
+    <div class="chapter-selector">
+    <label for="chapterSelect">📖 Перейти к главе:</label>
+    <select id="chapterSelect">
+        <option value="Ch1_TD.html">Глава 1</option>
+        <option value="Ch2_TD.html">Глава 2</option>
+        <option value="Ch3_TD.html">Глава 3</option>
+    </select>
+</div>
     <button id="scrollTopBtn" class="scroll-top" title="Наверх">↑</button>
 
     <div class="music-player">
