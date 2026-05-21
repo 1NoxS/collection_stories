@@ -47,7 +47,7 @@ li{
 }
 
 /* Только для обычных абзацев вне story-page */
-body:not(.Os,.TD) p
+body:not(.TD) p
 {
     font-size: 20px;
     padding: 15px;
@@ -55,7 +55,7 @@ body:not(.Os,.TD) p
 }
 
 /* Основные стили для страницы рассказа */
-.Os,.TD{
+.TD{
     margin: 0;
     padding: 0;
     font-family: 'Georgia', 'Times New Roman', serif;
